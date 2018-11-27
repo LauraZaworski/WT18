@@ -3,9 +3,27 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title> Aufgabe 1 </title>
+	<title> Aufgabe 3 </title>
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#navi a:visited{
+	color: #0082D1;
+}
+.table tbody tr:hover{
+	background-color: #76B900;
+}
+</style>
+
 </head>
 <body>
+
+<div class="container">
+
 <header>
 	<h1>Teilnehmer_innen WebTech</h1>
 <p>
@@ -16,53 +34,74 @@
 
 	<br/>
 
-	<nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">WebTech 18/19</a>
+  <div class="collapse navbar-collapse" id="navi">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Alle</a>
+      <a class="nav-item nav-link" href="#A">A-G</a>
+      <a class="nav-item nav-link" href="#H">H-L</a>
+      <a class="nav-item nav-link" href="#M">M-R</a>
+			<a class="nav-item nav-link" href="#S">S-Z</a>
+			<a class="nav-item nav-link" href="#">Startseite</a>
+    </div>
+  </div>
+</nav>
 
-	<a href="url"> ALLE </a> <a href="./NN/AG.php"> A-G </a> <a href="./NN/HL.php"> H-L </a> <a href="./NN/mr.php"> M-R </a><a href="./NN/SZ.php"> S-Z </a>
-
-	</nav>
+	<!--<a href="aufgabe2.html"> ALLE </a> <a href="./NN/AG.html"> A-G </a> <a href="./NN/HL.html"> H-L </a> <a href="./NN/mr.html"> M-R </a><a href="./NN/SZ.html"> S-Z </a>-->
 
 	<br/>
 
 	<section>
-	<h2>Alle Teilnehmer_innen</h2>
-	<table>
-	<tr>
-					<th>Vorname</th>
-					<th>Nachname</th>
-					<th>E-Mail-Adresse</th>
-					<th>IP-Adresse</th>
-				</tr>
-				<tr>
+	<h2>  Alle Teilnehmer_innen </h2>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th scope="col">Vorname</th>
+				<th scope="col">Nachname</th>
+				<th scope="col">Email-Adresse</th>
+				<th scope="col">IP-Adresse</th>
+			</tr>
+		</thead>
+		<tbody>
+
+				<tr
+				id="A">
 					<td>Adam</td>
 					<td>Anderson</td>
 					<td>aanderson8@google.fr</td>
 					<td>118.93.83.157</td>
 				</tr>
+
 				<tr>
 					<td>Susan</td>
 					<td>Andrews</td>
 					<td>sandrewsn@google.co.jp</td>
 					<td>228.214.9.251</td>
 				</tr>
+
 				<tr>
 					<td>Catherine</td>
 					<td>Andrews</td>
 					<td>candrewsp@noaa.gov</td>
 					<td>112.111.87.178</td>
 				</tr>
+
 				<tr>
 					<td>Alan</td>
 					<td>Bradley</td>
 					<td>abradley1c@globo.com</td>
 					<td>229.152.117.127</td>
 				</tr>
+
 				<tr>
 					<td>Anne</td>
 					<td>Brooks</td>
 					<td>abrooks16@bravesites.com</td>
 					<td>243.159.39.234</td>
 				</tr>
+
 				<tr>
 					<td>Russell</td>
 					<td>Brown</td>
@@ -153,7 +192,8 @@
 					<td>vgrahamk@aol.com</td>
 					<td>165.219.171.1</td>
 				</tr>
-				<tr>
+				<tr
+				id="H">
 					<td>Steven</td>
 					<td>Hamilton</td>
 					<td>shamiltonu@state.tx.us</td>
@@ -189,7 +229,8 @@
 					<td>akim4@odnoklassniki.ru</td>
 					<td>168.244.191.78</td>
 				</tr>
-				<tr>
+				<tr
+				id="M">
 					<td>Jennifer</td>
 					<td>Marshall</td>
 					<td>jmarshallt@gnu.org</td>
@@ -279,7 +320,8 @@
 					<td>kroseg@pinterest.com</td>
 					<td>222.172.140.56</td>
 				</tr>
-				<tr>
+				<tr
+				id="S">
 					<td>Steve</td>
 					<td>Sanders</td>
 					<td>ssanders1b@wikispaces.com</td>
@@ -333,10 +375,22 @@
 					<td>cwilliamsl@360.cn</td>
 					<td>154.87.204.51</td>
 				</tr>
+			</tbody>
 	</table>
 
+	<footer>
+		<section>
+		<nav>
+			<br/>
+	Laura Zaworski
+	</nav>
 	</section>
+	</footer>
 
+	</section>
+</div>
 </body>
+</br>
+
 
 </html>
